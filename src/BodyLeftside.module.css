@@ -6,32 +6,172 @@
 .box {
     width: 90%;
     height: 720px;
-
+   
 }
 
 .div1 {
     width: 100%;
-    height: 80px;
-   
+    height: 70px;
+    
 }
 
 .div1 ul {
 
     width: 100%;
-    height: 80px;
-    
+    height: 70px;
     display: flex;
     align-items: center;
     list-style: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid lightgray;
 }
+
 .div1 ul li {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 18px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bolder;
     color: white;
+  
 }
+
+.increasesize1 {
+  max-height: 0;
+  overflow: hidden;
+  transform: scaleY(0);
+  transform-origin: top;
+  background-color: rgb(179, 165, 174, 0.2);
+  opacity: 0;
+  transition: 
+    max-height 0.6s ease-in-out,
+    transform 0.6s ease-in-out,
+    opacity 0.5s ease-in-out;
+
+   border-bottom-left-radius: 10px;
+   border-bottom-Right-radius: 10px;
+  
+}
+.increasesize2 {
+   position: relative;
+   bottom: 5px;
+   width: 100%;
+   height: 100px; 
+    border-bottom-left-radius: 5px;
+    border-bottom-Right-radius: 5px;
+    background-color: rgb(179, 165, 174, 0.2);
+}
+.showDiv {
+  max-height: 405px;
+  transform: scaleY(1);
+  opacity: 1;
+   background-color: rgb(179, 165, 174, 0.2);
+   border-radius: 5px;
+}
+.list {
+    position: relative;
+    top: 3px;
+}
+.div2 {
+    width: 100%;
+    height: 550px;
+    overflow-y: scroll;
+    
+}
+
+.div2::-webkit-scrollbar {
+    width: 7px;
+}
+
+.div2::-webkit-scrollbar-track{
+    background-color: rgb(132, 154, 182);
+    border-radius: 5px;
+}
+
+.div2::-webkit-scrollbar-thumb{
+    background-color: rgb(168, 183, 203);
+    border-radius: 5px;
+    height: 10px;
+}
+
+.increasesize {
+    width: 100%;
+    height: 630px;
+}
+.div2 ul li {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.div2 ul li:hover {
+    background-color: rgb(132, 154, 182);
+}
+
+.div2 ul li svg {
+    padding-left: 10px;
+}
+
+.div2 ul li span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-left: 20px;
+    color: white;
+}
+
+.div3 {
+    width: 100%;
+    height: 90px;
+
+  position: relative;
+  top: 5px;
+}
+
+.div3 ul {
+    list-style: none;
+}
+
+.div3 ul li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.div3 ul li svg {
+    padding-left: 10px;
+}
+
+.div3 ul li span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-left: 20px;
+    color: white;
+}
+
+.div3 ul li:hover {
+    background-color: rgb(132, 154, 182);
+}
+
+.button {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(270deg, rgb(201, 110, 182), rgb(251, 173, 137));
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.button svg {
+    padding-right: 5px;
+}
+
+
