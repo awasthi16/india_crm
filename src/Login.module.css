@@ -1,0 +1,99 @@
+.login{
+    width: 100%;
+    height: 700px;
+    border: 2px solid black;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   position: absolute;
+   top: 0;
+   flex-wrap: wrap;
+   background-color: rgb(0,0,0,0.2);
+    flex-direction: row;
+}
+
+.login1{
+    width: 35%;
+    height: 600px;
+    border: 2px solid black;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+    background-color: white;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.login1 p{
+    font-size: 30px;
+}
+
+.login2{
+    font-size: 25px;
+    flex-direction: row;
+    display: flex;
+    gap: 100px;
+    margin-top: -70px;
+    /* border: 2px solid rgb(16, 116, 23); */
+}
+
+.login3{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid rgb(169, 169, 169);
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+
+}
+
+.input text{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.button{
+    width: 300px;
+    height: 35px;
+    background-color: rgb(63, 63, 253);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+}
+
+.sign{
+    width: 100%;
+    height: 700px;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* position: absolute;
+    top: 600; */
+}
+
+.sign1{
+    width: 35%;
+    height: 600px;
+    border: 2px solid black;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+    background-color: white;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.sign p{
+    font-size: 25px;
+}
+
