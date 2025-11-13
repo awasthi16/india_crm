@@ -38,6 +38,7 @@ const BodyRightside = () => {
 
       <div className={style.box2}>
 
+
       </div>
     </>
   )
