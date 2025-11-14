@@ -1,8 +1,13 @@
 import React from 'react'
+import Style from './Drive.module.css'
 
 const Drive = () => {
   return (
-    <div>Drive</div>
+   <>
+      <div className={Style.div1}>
+                <p>Drive</p>        
+           </div>
+   </>
   )
 }
 

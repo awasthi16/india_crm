@@ -1,8 +1,13 @@
 import React from 'react'
+import Style from './SitesandStores.module.css'
 
 const SitesandStores = () => {
   return (
-    <div>SitesandStores</div>
+    <>
+       <div className={Style.div1}>
+                 <p>SitesandStores</p>                                      
+            </div>
+            </>
   )
 }
 

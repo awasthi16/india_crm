@@ -1,8 +1,13 @@
 import React from 'react'
+import Style from './Inventorymanagement.module.css'
 
 const InventoryManagement = () => {
   return (
-    <div>InventoryManagement</div>
+    <>
+     <div className={Style.div1}>
+                         <p>InventoryManagement</p>                      
+     </div>
+    </>
   )
 }
 

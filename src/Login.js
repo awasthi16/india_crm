@@ -11,7 +11,7 @@ const Login = () => {
     // const[aa1,setaa1]=useState("")
 
     function ass(){
-        if(a1==""&&b1==""&&c1==""){
+        if(a1===""&&b1===""&&c1===""){
             alert("please enter all details")
         }
         else {

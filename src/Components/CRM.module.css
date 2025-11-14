@@ -1,0 +1,430 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.div1
+{
+    display: flex;
+    width: 81%;
+    height: 650px;
+    position: absolute;
+    top: 72px;
+    left: 298px;
+   
+}
+.div1a
+{
+    width: 93%;
+    height:650px;
+   
+}
+.div1abox1
+{
+    
+    display: flex;
+    align-items: end;
+    width: 98%;
+    height: 100px;
+    
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.div1abox1 ul{
+    width: 100%;
+    height: 70px;
+    list-style-type: none;
+    display: flex;
+   
+  
+}
+
+.firstbutton
+{  display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 110px;
+    height: 50px;
+    background-color: rgb(110,112,185);
+    border: none;
+    outline: none;
+    color: white;
+    
+ 
+}
+.firstbutton span{
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.firstbutton svg
+{
+position: relative;
+}
+
+.secondbutton
+{
+    margin-left: 25px;
+    position: relative;
+    top: 5px;
+    width: 150px;
+    height: 43px;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+    border-radius: 15px;
+   border: none;
+   outline: none;
+   background-color: rgb(43,179,116);
+   color: lightgray;
+}
+.secondbutton span{
+    font-size: large;
+    color: white;
+}
+.thirdbutton
+{
+    margin-left: 10px;
+    display: flex;
+      position: relative;
+    top: 5px;
+    justify-content:space-around;
+     align-items: center;
+    width: 150px;
+    height: 43px;
+    border-radius: 15px;
+   border: none;
+   outline: none;
+     color: white;
+      background-color: rgba(248, 246, 247, 0.2);
+}
+.thirdbutton:hover{
+    background-color: rgb(132, 154, 182);
+}
+.thirdbutton span{
+    font-size: 18px;
+  
+}
+.fourbutton
+{
+    margin-left: 10px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 95%;
+    height: 43px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    position: relative;
+    top: 5px;
+   
+    color:white;
+    background-color: rgb(132, 154, 182);
+}
+.fourbutton:hover{
+    background-color: rgb(132, 154, 182);
+}
+.fourbutton input{
+    position: relative;
+    left: 5px;
+    display: flex;
+      width: 90%;
+    height: 43px;
+    font-size: large;
+    border-radius: 15px;
+    background-color: white;
+     outline: none;
+    border: none;
+    color: white;
+     background-color: rgb(132, 154, 182);
+
+}
+.fourbutton input:hover{
+    background-color: rgb(132, 154, 182);
+}
+.fivebutton{
+    position: relative;
+    top: 5px;
+    left: 30px;
+    border: none;
+    outline: none;
+    width: 44px;
+    height: 43px;
+    border-radius: 10px;
+    background-color: rgba(248, 246, 247, 0.2);
+   
+}
+
+.problemcreate
+{
+   width: 650px;
+  
+}
+
+.fivebutton:hover{
+     background-color: rgb(132, 154, 182);
+}
+.div1abox2
+{
+    display: flex;
+     width: 98%;
+    height: 50px;
+   
+    border-radius: 5px;
+    margin-left: 10px; 
+}
+.div1abox2a
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 50px;
+
+
+}
+.div1abox2a1
+{
+    width: 48%;
+    height: 35px;
+    border-radius: 10px;
+     background-color: rgba(248, 246, 247, 0.2);
+    
+}
+.div1abox2a1 ul li{
+  
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 16px;
+}
+.kanban
+{
+    border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+}
+.calendar
+{
+    border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      
+}
+.div1abox2a1 ul
+{
+    
+    display: flex;
+    list-style-type: none;
+}
+.div1abox2a1 ul li:hover{
+    background-color: rgb(190, 199, 212,0.3);
+
+}
+.div1abox2a2
+{   position: relative;
+    right: 13px;
+    width: 48%;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgba(248, 246, 247, 0.2);
+    
+}
+.div1abox2a2 ul li{
+  
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 16px;
+}
+.inbound
+{
+ border-top-left-radius: 10px;
+ border-bottom-left-radius: 10px;
+}
+.more
+{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+.div1abox2a2 ul
+{
+    
+    display: flex;
+    list-style-type: none;
+    
+}
+.div1abox2a2 ul li:hover{
+    background-color: rgb(190, 199, 212,0.3);
+    
+}
+.div1abox2b
+{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 40%;
+    height: 50px;
+   
+}
+.div1abox2b1
+{
+
+    margin-right: 10px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+
+  width: 37%;
+  height: 35px;
+
+  border-radius: 10px;
+  background-color: rgba(248, 246, 247, 0.2);
+
+}
+.div1abox2b1:hover{
+      background-color: rgb(190, 199, 212,0.3);
+}
+.div1abox2b2
+{
+  width: 25%;
+  height: 35px;
+
+  border-radius: 10px;
+  display: flex;
+align-items: center;
+justify-content: space-around;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+background-color: rgba(248, 246, 247, 0.2);
+
+
+
+}
+.div1abox2b2:hover{
+   background-color: rgb(190, 199, 212,0.3);
+}
+.div1abox4
+{
+    position: relative;
+    top: 430px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+   
+}
+.div1abox4 ul{
+    width: 60%;
+    height: 60%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.div1abox4 ul li button{
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    outline: none;
+    color: white;
+     background-color: rgba(248, 246, 247, 0.2);
+     font-size: 16px;
+}
+.div1b
+{
+    width: 7%;
+    height: 650px;
+  
+}
+.div1b1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 170px;
+   
+}
+.div1b1 ul{
+    position: relative;
+    top: 15px;
+
+    width: 50%;
+    height: 140px;
+    list-style: none;
+    
+}
+.div1b1 ul li{
+   margin-left: 3px;
+     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+    color: white;
+    border-radius: 50%;
+     background-color: rgba(182, 190, 206, 0.2);
+    
+}
+.div1b1 ul li:hover{
+  background-color: rgb(219, 225, 236,0.2);
+}
+.div1b2{
+    width: 100%;
+    height: 220px;
+  
+}
+
+.div1b2 ul{
+    width: 100%;
+    height: 220px;
+ 
+    list-style: none;
+}
+.div1b2 ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 51px;
+   
+  
+}
+.div1b2 ul li:hover{
+     background-color: rgb(219, 225, 236,0.2);
+}
+.div1b2 ul li div{
+    width: 36px;
+    height: 36px;
+ 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(47,198,246);
+    
+}
+.icon1
+{
+    background: linear-gradient(360deg,rgb(47,198,246),rgb(89,242,87));
+}

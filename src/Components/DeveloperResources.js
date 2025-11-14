@@ -1,8 +1,13 @@
 import React from 'react'
+import Style from './DeveloperResoure.module.css'
 
 const DeveloperResources = () => {
   return (
-    <div>DeveloperResources</div>
+   <>
+     <div className={Style.div1}>
+                    <p>DeveloperResources</p>        
+      </div>
+   </>
   )
 }
 

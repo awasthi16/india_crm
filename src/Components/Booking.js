@@ -1,8 +1,13 @@
 import React from 'react'
+import Style from './Booking.module.css'
 
 const Booking = () => {
   return (
-    <div>Booking</div>
+   <>
+     <div className={Style.Bookingdiv1}>
+         <p>Booking</p>
+    </div>
+   </>
   )
 }
 

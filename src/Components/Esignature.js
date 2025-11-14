@@ -1,8 +1,15 @@
 import React from 'react'
+import  Style from './Esignature.module.css'
 
 const Esignature = () => {
   return (
-    <div>Esignature</div>
+  <>
+
+     <div className={Style.div1}>
+                      <p>Esignature</p>                 
+        </div>
+  
+  </>
   )
 }
 

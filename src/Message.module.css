@@ -3,6 +3,9 @@
     height: 700px;
     background-color: lightblue;
     display: flex;
+
+   border-radius: 15px;
+ 
 }
 
 .message1 {

@@ -1,8 +1,14 @@
 import React from 'react'
+import Style from './OnlineDocument.module.css'
 
 const OnlineDocument = () => {
   return (
-    <div>OnlineDocument</div>
+   <>
+     <div className={Style.div1}>
+                       <p>OnlineDocument</p>                                  
+         </div>
+   
+   </>
   )
 }
 

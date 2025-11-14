@@ -1,8 +1,16 @@
 import React from 'react'
+import Style from './Automation.module.css'
 
 const Automation = () => {
   return (
-    <div>Automation</div>
+    <>
+    <div className={Style.div1}>
+
+      <p>Automation</p>
+
+    </div>
+    
+    </>
   )
 }
 

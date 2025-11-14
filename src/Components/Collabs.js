@@ -1,8 +1,13 @@
 import React from 'react'
+import Style from './Collabs.module.css'
 
 const Collabs = () => {
   return (
-    <div>Collabs</div>
+    <>
+     <div className={Style.div1}>
+                    <p>Collabs</p>
+          </div>
+    </>
   )
 }
 

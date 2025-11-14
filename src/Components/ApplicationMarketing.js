@@ -1,8 +1,14 @@
 import React from 'react'
+import Style from "./ApplicationMarketing.module.css"
 
 const ApplicationMarketing = () => {
   return (
-    <div>ApplicationMarketing</div>
+  <>
+   <div className={Style.div1}>
+
+   </div>
+  
+  </>
   )
 }
 

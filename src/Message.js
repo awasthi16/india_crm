@@ -85,7 +85,7 @@ const Message = () => {
 
         {/* .......................................................................................................................... */}
         <div className={style.message2}>
-          {a == "p1" &&  <div  onClickr={() => { seta(!a) }} className={style.aa1}>
+          {a === "p1" &&  <div  onClickr={() => { seta(!a) }} className={style.aa1}>
             <div className={style.clickNav}>
               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-1-circle" viewBox="0 0 16 16">
                 <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z" />
@@ -120,7 +120,7 @@ const Message = () => {
 
 
 
-          {a == "p2" && <div onClickr={() => { seta(!a) }} className={style.aa2} >
+          {a === "p2" && <div onClickr={() => { seta(!a) }} className={style.aa2} >
             <div className={style.clickNav}>
               <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
                 <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z" />
@@ -163,7 +163,7 @@ const Message = () => {
           </div>}
 
 
-          {a == "p3" && <div onClickr={() => { seta(!a) }} className={style.aa3} >
+          {a === "p3" && <div onClickr={() => { seta(!a) }} className={style.aa3} >
             <div className={style.clickNav}>
               <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-chat-square-text" viewBox="0 0 16 16">
                 <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
@@ -198,7 +198,7 @@ const Message = () => {
 
 
 
-          {a == "p4" && <div onClickr={() => { seta(!a) }} className={style.aa4} >
+          {a === "p4" && <div onClickr={() => { seta(!a) }} className={style.aa4} >
             <div className={style.clickNav}>
               <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-file-earmark-ppt-fill" viewBox="0 0 16 16">
                 <path d="M8.188 10H7V6.5h1.188a1.75 1.75 0 1 1 0 3.5" />
