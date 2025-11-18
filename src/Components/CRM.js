@@ -1,10 +1,18 @@
 import React, { useState } from 'react'
 import Style from './CRM.module.css'
+import CRMKanban from './CRMKanban'
+import CRMList from './CRMList'
+import CRMActivities from './CRMActivities'
+import CRMCalender from './CRMCalender'
 
 const CRM = () => {
   const [sign, setsign] = useState(false)
-  const [value, setvalue] = useState(null)
-  const [size,setsize]=useState(false)
+  const [value, setvalue] = useState("kanban")
+  const [size, setsize] = useState(false)
+  const [temp, settemp] = useState(false)
+  const[li,setli]=useState(false)
+
+
 
   return (
     <>
@@ -29,7 +37,7 @@ const CRM = () => {
               </svg><span>General</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                 </svg></button></li>
-              <li className={Style.problemcreate}><button style={{width:size?"50%":"95%",transition:"width 0.5s ease-in 0s"}} className={Style.fourbutton}><input type="" name="" id="" placeholder='Filter and search' /><svg style={{position:"relative",right:"9px"}} onClick={()=>{setsize(!size)}} xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <li className={Style.problemcreate}><button style={{ width: size ? "50%" : "95%", transition: "width 0.5s ease-in 0s" }} className={Style.fourbutton}><input type="" name="" id="" placeholder='Filter and search' /><svg style={{ position: "relative", right: "9px" }} onClick={() => { setsize(!size) }} xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
               </svg></button></li>
               <li><button className={Style.fivebutton}><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-gear" viewBox="0 0 16 16">
@@ -48,7 +56,7 @@ const CRM = () => {
                 <ul>
                   <li onClick={() => { setvalue("kanban") }} style={{ backgroundColor: value === "kanban" ? "rgb(132, 154, 182)" : "" }} className={Style.kanban}>kanban</li>
                   <li onClick={() => { setvalue("list") }} style={{ backgroundColor: value === "list" ? "rgb(132, 154, 182)" : "" }} >List</li>
-                  <li onClick={() => { setvalue("activies") }} style={{ backgroundColor: value === "activies" ? "rgb(132, 154, 182)" : "" }} >Activies</li>
+                  <li onClick={() => { setvalue("activites") }} style={{ backgroundColor: value === "activies" ? "rgb(132, 154, 182)" : "" }} >Activies</li>
                   <li onClick={() => { setvalue("calendar") }} style={{ backgroundColor: value === "calendar" ? "rgb(132, 154, 182)" : "" }} className={Style.calendar} >Calendar</li>
                 </ul>
 
@@ -64,7 +72,7 @@ const CRM = () => {
                     <path d="M7.988 12.158c-1.851 0-2.941-1.57-2.941-3.99V7.84c0-2.408 1.101-3.996 2.965-3.996 1.857 0 2.935 1.57 2.935 3.996v.328c0 2.408-1.101 3.99-2.959 3.99M8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895" />
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8" />
                   </svg>Planned</li>
-                  <li className={Style.more} onClick={() => { setvalue("more") }} style={{ backgroundColor: value === "more" ? "rgb(132, 154, 182)" : "" }}> <svg style={{ position: "relative", left: "10px", bottom: "2px" }} xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-0-circle" viewBox="0 0 16 16">
+                  <li className={Style.more} onClick={() => { settemp("more") }} style={{ backgroundColor: temp === "more" ? "rgb(132, 154, 182)" : "" }}> <svg style={{ position: "relative", left: "10px", bottom: "2px" }} xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-0-circle" viewBox="0 0 16 16">
                     <path d="M7.988 12.158c-1.851 0-2.941-1.57-2.941-3.99V7.84c0-2.408 1.101-3.996 2.965-3.996 1.857 0 2.935 1.57 2.935 3.996v.328c0 2.408-1.101 3.99-2.959 3.99M8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895" />
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8" />
                   </svg>More <svg style={{ position: "relative", right: "10px" }} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
@@ -74,6 +82,9 @@ const CRM = () => {
 
               </div>
 
+
+
+
             </div>
             <div className={Style.div1abox2b}>
               <div className={Style.div1abox2b1}   >
@@ -81,7 +92,7 @@ const CRM = () => {
                   <path d="M2.76 3.061a.5.5 0 0 1 .679.2l1.283 2.352A8.9 8.9 0 0 1 8 5a8.9 8.9 0 0 1 3.278.613l1.283-2.352a.5.5 0 1 1 .878.478l-1.252 2.295C14.475 7.266 16 9.477 16 12H0c0-2.523 1.525-4.734 3.813-5.966L2.56 3.74a.5.5 0 0 1 .2-.678ZM5 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m6 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
                 </svg>  Automatiom rules
               </div>
-              <div className={Style.div1abox2b2}   >
+              <div onClick={()=>{settemp("extension")}} className={Style.div1abox2b2}   >
                 Extension  | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                 </svg>
@@ -90,18 +101,21 @@ const CRM = () => {
             </div>
           </div>
           <div className={Style.div1abox3}>
-
+            {value === "kanban" && <CRMKanban />}
+            {value === "list" && <CRMList />}
+            {value === "activites" && <CRMActivities />}
+            {value === "calendar" && <CRMCalender />}
           </div>
-          <div   className={Style.div1abox4}>
+          <div className={Style.div1abox4}>
 
             <ul>
               <li><button>Bitrix 24 <sup><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-stopwatch" viewBox="0 0 16 16">
-                            <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z" />
-                            <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3" />
-                        </svg></sup></button></li>
+                <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z" />
+                <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3" />
+              </svg></sup></button></li>
               <li><button>English <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
-</svg></button></li>
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+              </svg></button></li>
               <li>© 2025 Bitrix24</li>
               <li>Implementation request</li>
               <li>Themes</li>
@@ -152,6 +166,38 @@ const CRM = () => {
         </div>
 
       </div>
+
+      {temp === "more" &&
+        <div onMouseLeave={() => { settemp("") }} className={Style.morebutton}>
+          <ul>
+            <li> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-0-circle" viewBox="0 0 16 16">
+              <path d="M7.988 12.158c-1.851 0-2.941-1.57-2.941-3.99V7.84c0-2.408 1.101-3.996 2.965-3.996 1.857 0 2.935 1.57 2.935 3.996v.328c0 2.408-1.101 3.99-2.959 3.99M8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895" />
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8" />
+            </svg> <span>Employee's  inbound activities</span></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-0-circle" viewBox="0 0 16 16">
+              <path d="M7.988 12.158c-1.851 0-2.941-1.57-2.941-3.99V7.84c0-2.408 1.101-3.996 2.965-3.996 1.857 0 2.935 1.57 2.935 3.996v.328c0 2.408-1.101 3.99-2.959 3.99M8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895" />
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8" />
+            </svg>  <span>Employee's  inbound activities</span></li>
+
+          </ul>
+        </div>
+      }
+
+      {temp==="extension" &&
+        <div   onMouseLeave={()=>{settemp("")}} className={Style.Extension}>
+          <ul>
+            <li><span>Knowledge bases</span><span className={Style.hr1}><hr/></span></li>
+            <li onMouseOver={()=>{setli("skb")}}   style={{backgroundColor:li==="skb"?" rgba(182, 190, 206, 0.2)":""}}>Select Knowledge base</li>
+            <li  onMouseOver={()=>{setli("ckb")}}   style={{backgroundColor:li==="ckb"?"rgba(182, 190, 206, 0.2)":""}}> Create Knowledge base</li>
+            <li><hr /></li>
+            <li onMouseOver={()=>{setli("ss")}}  style={{backgroundColor:li==="ss"?"rgba(182, 190, 206, 0.2)":""}}>Smart scripts <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+            </svg></li>
+            <li><hr /></li>
+            <li onMouseOver={()=>{setli("bm")}}  style={{backgroundColor:li==="bm"?"rgba(182, 190, 206, 0.2)":""}}>Bitrix24 Market</li>
+          </ul>
+        </div>
+      }
 
     </>
   )
