@@ -1,0 +1,155 @@
+.employeediv {
+    width: 100%;
+    height: 700px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputdiv {
+    width: 90%;
+    height: 450px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.nav {
+    padding-left: 5px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(116, 113, 113);
+}
+
+.see {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+
+.three {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+}
+
+.des {
+    margin-right: 2rem;
+}
+
+.hrr {
+    color: rgba(145, 139, 139, 0.677);
+}
+
+.three1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    list-style: none;
+}
+
+.nav1 {
+    padding-left: 5px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: rgb(116, 113, 113);
+}
+
+.co {
+    color: #4966b7;
+}
+
+.hscroll {
+    width: 100%;
+    overflow-x: scroll;
+    /* Scrollbar niche show hoga */
+    /* overflow-y: hidden; */
+    /* white-space: nowrap; */
+    /* border: 2px solid black; */
+}
+
+.nav2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    /* background-color: red; */
+    font-weight: 400;
+    color: rgb(95, 92, 92);
+}
+
+.sel {
+    padding-left: 15px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opt {
+    margin-right: 15px;
+}
+
+.quantity {
+    color: #4966b7;
+}
+
+.depart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    border: 1px  gray;
+    background-color: rgba(235, 229, 229, 0.504);
+    color: gray;
+    border-radius: 5px;
+}
+.create{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    border: 1px  gray;
+    background-color: rgba(235, 229, 229, 0.504);
+    color: gray;
+     border-radius: 5px;
+}
+.action{
+         display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 40px;
+    border: 1px  gray;
+    background-color: rgba(235, 229, 229, 0.504);
+    color: gray;
+    border-radius: 5px;
+}
+.box3{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 1rem;
+    padding-top: 10px;
+}
