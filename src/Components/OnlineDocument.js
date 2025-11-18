@@ -1,11 +1,12 @@
 import React from 'react'
 import Style from './OnlineDocument.module.css'
+import OnlineDoc from './OnlineDoc'
 
 const OnlineDocument = () => {
   return (
    <>
      <div className={Style.div1}>
-                       <p>OnlineDocument</p>                                  
+                       <OnlineDoc/>                                  
          </div>
    
    </>
