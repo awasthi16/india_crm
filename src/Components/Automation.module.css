@@ -9,5 +9,186 @@
     position: absolute;
     top: 72px;
     left: 298px;
+   
+}
+.div1a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+
+}
+.div1abox1
+{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    border-bottom: 1px solid white;
+}
+.div1abox2
+{
+    display: flex;
+    align-items: center;
+    width: 55%;
+    height: 100px;
+    border-bottom: 1px solid white;
+}
+.fourbutton {
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: 43px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    position: relative;
+    top: 5px;
+
+    color: white;
+    background-color: rgb(132, 154, 182);
+}
+
+.fourbutton:hover {
+    background-color: rgb(132, 154, 182);
+}
+
+.fourbutton input {
+    position: relative;
+    left: 5px;
+    display: flex;
+    width: 90%;
+    height: 43px;
+    font-size: large;
+    border-radius: 15px;
+    background-color: white;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgb(132, 154, 182);
+
+}
+
+.fourbutton input:hover {
+    background-color: rgb(132, 154, 182);
+}
+.div1b
+{
+    width: 95%;
+    height: 500px;
+    position: relative;
+    top: 25px;
+    left: 33px;
+}
+.div1bbox1 ul{
+    height: 30px;
+    display: flex;
+    list-style: none;
+   
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     
+}
+/* -------------------------Details------------------------------------------------ */
+
+.firstBox
+{
+    width: 420px;
+    height: 230px;
+    border: 2px dotted rgb(233,236,242);
+    border-radius: 10px;
+    position: relative;
+    top:60px;
+    background-color: rgb(152,159,186);
+    
+}
+.firstBoxBox1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+
+}
+.firstBoxBox2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+}
+.circle
+{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: rgb(174,180,204);
+}
+
+
+/* ------------------------------secondBox------------------------------------ */
+.secondBox
+{
+    position: relative;
+    top: 60px;
+    width: 90%;
+    height: 450px;
+    border-radius: 10px;
+  
+}
+.secondBoxBox1
+{
+    width: 100%;
+    height: 60px;
+    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+}
+.secondBoxBox1 ul{
+    align-items: center;
+    justify-content:space-around;
+    display: flex;
+    list-style: none;
+    height: 50px;
+}
+.secondBoxBox1 ul li{
+    display:flex;
+    align-items: center;
+    justify-content: start;
+    width: 460px;
+    height: 30px;
+    gap: 10px;
+
+}
+.secondBoxBox1 ul li span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+
+}
+.secondBoxBox2
+{
+    width: 100%;
+    height: 380px;
+   
+    background-color: rgb(239, 237, 245,1);
+    border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
 }

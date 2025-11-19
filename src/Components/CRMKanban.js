@@ -8,7 +8,7 @@ import Style from './CRNKanban.module.css'
 const CRMKanban = () => {
     const [k, setk] = useState("box1")
     const [n, setn] = useState(false)
-    const [r,setr] = useState(null)
+    // const [r,setr] = useState(null)
 
 
 //--------------------------------------------------------------------

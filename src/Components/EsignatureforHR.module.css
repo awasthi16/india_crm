@@ -4,9 +4,521 @@
 }
 .div1
 {
-     width: 81%;
+    width: 81%;
     height: 650px;
     position: absolute;
     top: 72px;
     left: 298px;
+     overflow-y: scroll;
+     
+     display: flex;
 }
+.div1::-webkit-scrollbar{
+    width: 5px;
+}
+.johri1{
+  width: 95%;
+  height: 650px;
+
+}
+.div1a {
+
+    display: flex;
+    align-items: end;
+    width: 98%;
+    height: 100px;
+ 
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.div1a ul {
+    width: 100%;
+    height: 70px;
+    list-style-type: none;
+    display: flex;
+}
+
+.firstbutton {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 260px;
+    height: 50px;
+    background-color: rgb(110, 112, 185);
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.firstbutton span {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.firstbutton svg {
+    position: relative;
+}
+
+.secondbutton {
+    margin-left: 25px;
+    position: relative;
+    top: 5px;
+    width: 150px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(43, 179, 116);
+    color: lightgray;
+}
+
+.secondbutton span {
+    font-size: large;
+    color: white;
+}
+
+.fourbutton {
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 43px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    position: relative;
+    top: 5px;
+   
+    color: white;
+    background-color: rgb(132, 154, 182);
+}
+
+.fourbutton:hover {
+    background-color: rgb(132, 154, 182);
+}
+
+.fourbutton input {
+    position: relative;
+    left: 5px;
+    display: flex;
+    width: 90%;
+    height: 43px;
+    font-size: large;
+    border-radius: 15px;
+    background-color: white;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgb(132, 154, 182);
+  
+
+}
+
+.fourbutton input:hover {
+    background-color: rgb(132, 154, 182);
+}
+
+.fivebutton {
+    position: relative;
+    top: 5px;
+    left: 58px;
+    border: none;
+    outline: none;
+    width: 44px;
+    height: 43px;
+    border-radius: 10px;
+    background-color: rgba(248, 246, 247, 0.2);
+
+}
+
+.problemcreate {
+    width: 650px;
+
+}
+
+.fivebutton:hover {
+    background-color: rgb(132, 154, 182);
+}
+.div1b
+{
+     display: flex;
+    width: 98%;
+    height: 50px;
+    
+    border-radius: 5px;
+    margin-left: 10px;
+    
+}
+
+
+.div1abox2 {
+    display: flex;
+    width: 98%;
+    height: 50px;
+    
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.div1abox2a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 50px;
+
+
+}
+
+.div1abox2a1 {
+    width: 23%;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgba(248, 246, 247, 0.2);
+
+}
+.List{
+    border-top-right-radius:10px;
+     border-bottom-right-radius:10px;
+}
+
+.div1abox2a1 ul li {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+.kanban {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.div1abox2a1 ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.div1abox2a1 ul li:hover {
+    background-color: rgb(190, 199, 212, 0.3);
+
+}
+
+.div1abox2b {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 40%;
+    height: 50px;
+
+}
+
+.div1abox2b1 {
+
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+    width: 37%;
+    height: 35px;
+
+    border-radius: 10px;
+    background-color: rgba(248, 246, 247, 0.2);
+
+}
+
+.div1abox2b1:hover {
+    background-color: rgb(190, 199, 212, 0.3);
+}
+
+
+
+.johridiv1 {
+
+    display: flex;
+    width: 98%;
+    height: 660px;
+   
+    position: relative;
+    left: 10px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+
+
+.johribox1 {
+    width: 26%;
+    height: 660px;
+    border-radius: 5px;
+    margin-right: 1px;
+      border-left:2px dotted white;
+     border-right:2px dotted white;
+      border-bottom:2px dotted white;
+}
+
+.johribox1div1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    color: lightgray;
+    background-color: rgb(57, 168, 239);
+}
+
+.johribox1div1 p {
+    position: relative;
+    left: 17px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    height: 20px;
+
+}
+
+.johribox1div1 p span {
+    color: black;
+}
+.johribox2 {
+    width: 24%;
+    height: 660px;
+    margin-right: 1px;
+    border-radius: 5px;
+    border-right: 2px  dotted white;
+    border-bottom:  2px  dotted white;
+}
+
+.johribox2div1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+
+    border-radius: 5px;
+    color: lightgray;
+    background-color: rgb(47,198,246);
+
+}
+.johribox2div1 p {
+    position: relative;
+    left: 17px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    height: 20px;
+
+}
+
+.johribox2div1 p span {
+    color: black;
+}
+
+.johribox3 {
+     width: 24%;
+    height: 660px;
+    margin-right: 1px;
+       border-right: 2px  dotted white;
+    border-bottom:  2px  dotted white;
+    border-radius: 5px;
+}
+
+.johribox3div1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+
+    border-radius: 5px;
+    color: lightgray;
+    background-color: rgb(85,208,224);
+
+}
+.johribox3div1 p {
+    position: relative;
+    left: 17px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    height: 20px;
+
+}
+
+.johribox3div1 p span {
+    color: black;
+}
+
+.johribox4 {
+       width: 24%;
+    height: 660px;
+    border-radius: 5px;
+    margin-right: 1px;
+       border-right: 2px  dotted white;
+    border-bottom:  2px  dotted white;
+}
+
+.johribox4div1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+
+    border-radius: 5px;
+    color: lightgray;
+    background-color: rgb(71,228,194);
+
+}
+.johribox4div1 p {
+    position: relative;
+    left: 17px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    height: 20px;
+
+}
+
+.johribox4div1 p span {
+    color: black;
+}
+
+.johribox5 {
+       width: 24%;
+    height: 660px;
+    border-radius: 5px;
+    margin-right: 1px;
+       border-right: 2px  dotted white;
+    border-bottom:  2px  dotted white;
+}
+
+.johribox5div1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+
+    border-radius: 5px;
+    color: lightgray;
+    background-color: rgb(255,169,0);
+
+}
+
+
+.johribox5div1 p {
+    position: relative;
+    left: 17px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    height: 20px;
+
+}
+
+.johribox5div1 p span {
+    color: black;
+}
+
+
+
+
+
+
+
+
+.johri2div1b1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 170px;
+
+}
+
+.johri2div1b1 ul {
+    position: relative;
+    top: 15px;
+
+    width: 50%;
+    height: 140px;
+    list-style: none;
+
+}
+
+.johri2div1b1 ul li {
+    margin-left: 3px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 35px;
+    height: 35px;
+    color: white;
+    border-radius: 50%;
+    background-color: rgba(182, 190, 206, 0.2);
+
+}
+
+.johri2div1b1 ul li:hover {
+    background-color: rgb(219, 225, 236, 0.2);
+}
+
+.johri2div1b2 {
+    width: 100%;
+    height: 220px;
+  
+    position: relative;
+    left: 10px;
+
+}
+
+.johri2div1b2 ul {
+    width: 100%;
+    height: 220px;
+  
+    list-style: none;
+}
+
+.johri2div1b2 ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 51px;
+
+
+}
+
+.johri2div1b2 ul li:hover {
+    background-color: rgb(219, 225, 236, 0.2);
+}
+
+.johri2div1b2 ul li div {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(47, 198, 246);
+
+}
+
+.icon1 {
+    background: linear-gradient(360deg, rgb(47, 198, 246), rgb(89, 242, 87));
+}
+
