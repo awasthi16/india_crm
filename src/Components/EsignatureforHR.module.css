@@ -252,11 +252,22 @@
     display: flex;
     width: 98%;
     height: 660px;
-   
+    overflow-x: auto;
+    overflow-y: hidden;
     position: relative;
     left: 10px;
     margin-bottom: 50px;
     margin-top: 20px;
+}
+.johridiv1::-webkit-scrollbar{
+    height: 6px;
+}
+.johridiv1::-webkit-scrollbar-thumb{
+    background: lightgray;
+    border-radius: 10px;
+}
+.johridiv1::-webkit-scrollbar-track{
+    background:transparent;
 }
 
 
@@ -264,6 +275,7 @@
 .johribox1 {
     width: 26%;
     height: 660px;
+    flex-shrink: 0;
     border-radius: 5px;
     margin-right: 1px;
       border-left:2px dotted white;
@@ -295,7 +307,8 @@
     color: black;
 }
 .johribox2 {
-    width: 24%;
+    width: 26%;
+    flex-shrink: 0;
     height: 660px;
     margin-right: 1px;
     border-radius: 5px;
@@ -329,7 +342,8 @@
 }
 
 .johribox3 {
-     width: 24%;
+     width: 26%;
+     flex-shrink: 0;
     height: 660px;
     margin-right: 1px;
        border-right: 2px  dotted white;
@@ -363,7 +377,8 @@
 }
 
 .johribox4 {
-       width: 24%;
+       width: 26%;
+       flex-shrink: 0;
     height: 660px;
     border-radius: 5px;
     margin-right: 1px;
@@ -397,7 +412,8 @@
 }
 
 .johribox5 {
-       width: 24%;
+       width: 26%;
+       flex-shrink: 0;
     height: 660px;
     border-radius: 5px;
     margin-right: 1px;
@@ -522,3 +538,29 @@
     background: linear-gradient(360deg, rgb(47, 198, 246), rgb(89, 242, 87));
 }
 
+
+.div1abox4 ul {
+    width: 60%;
+    height: 60%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div1abox4 ul li button {
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgba(248, 246, 247, 0.2);
+    font-size: 16px;
+}

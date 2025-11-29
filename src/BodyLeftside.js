@@ -1,12 +1,19 @@
 import React, { useState } from 'react'
 import style from "./BodyLeftside.module.css"
 import { Link } from "react-router-dom"
+import Webmail from './Components/Webmail'
 export const BodyLeftside = () => {
     const [temp, settemp] = useState(false)
     const [semp, setsemp] = useState(false)
     const [remp, setremp] = useState(false)
     const [x, setx] = useState("Collaboration")
     const [y, sety] = useState(false)
+    const [a,seta]=useState(false)
+
+
+    function open(){
+        seta(true)
+    }
     return (
         <>
 
@@ -33,8 +40,8 @@ export const BodyLeftside = () => {
                             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                         </svg>}</li>
                         {
-                            temp === true &&
-                            <div style={{ maxHeight: temp ? "430px" : "0px",transition: "max-height 0.5s ease-in-out 0s",}}   className={`${style.increasesize1} ${temp ? style.showDiv : ""}`}>
+                            
+                            <div  className={`${style.increasesize1} ${temp ? style.showDiv : ""}`}>
                                 <ul >
                                     <Link to="/"><li onMouseOver={() => { sety(!y) }} style={{ backgroundColor: x === "messenge" ? "rgb(168,185,204)" : "" }} onClick={() => setx("messenge")}>{x === "messenge" ? <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-chat-square-fill" viewBox="0 0 16 16">
                                         <path d="M2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
@@ -81,11 +88,11 @@ export const BodyLeftside = () => {
                                         <path d="M4.5 11a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1M3 10.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
                                         <path d="M16 11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V9.51c0-.418.105-.83.305-1.197l2.472-4.531A1.5 1.5 0 0 1 4.094 3h7.812a1.5 1.5 0 0 1 1.317.782l2.472 4.53c.2.368.305.78.305 1.198zM3.655 4.26 1.592 8.043Q1.79 8 2 8h12q.21 0 .408.042L12.345 4.26a.5.5 0 0 0-.439-.26H4.094a.5.5 0 0 0-.44.26zM1 10v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1" />
                                     </svg>}<span>Drive</span></li></Link>
-                                    <Link to="/webmail"> <li style={{ backgroundColor: x === "Webmail" ? "rgb(168,185,204)" : "" }} onClick={() => setx("Webmail")} >{x === "Webmail" ? <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                    <li style={{ backgroundColor: x === "Webmail" ? "rgb(168,185,204)" : "" }} onClick={() =>{ open()}} >{x === "Webmail" ? <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                                         <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
                                     </svg> : <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-envelope" viewBox="0 0 16 16">
                                         <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
-                                    </svg>}<span>Webmail</span></li></Link>
+                                    </svg>}<span>Webmail</span></li>
                                     <Link to="/workgroups"> <li style={{ backgroundColor: x === "Workgroups" ? "rgb(168,185,204)" : "" }} onClick={() => setx("Workgroups")} >{x === "Workgroups" ? <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-people-fill" viewBox="0 0 16 16">
                                         <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
                                     </svg> : <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-people" viewBox="0 0 16 16">
@@ -125,7 +132,7 @@ export const BodyLeftside = () => {
                         </svg> : <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
                             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
                         </svg>}<span>Sites and Stores</span></li></Link>
-                        <Link to="/e-Signature for HR"> <li style={{ backgroundColor: x === "e-Signature for HR" ? "rgb(168,185,204)" : "" }} onClick={() => setx("e-Signature for HR")} >{x === "e-Signature for HR" ? <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-pen-fill" viewBox="0 0 16 16">
+                        <Link to="/e-Signature for HR"> <li style={{ backgroundColor: x === "e-signature-hr" ? "rgb(168,185,204)" : "" }} onClick={() => setx("e-Signature for HR")} >{x === "e-Signature for HR" ? <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-pen-fill" viewBox="0 0 16 16">
                             <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001" />
                         </svg> : <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-pen" viewBox="0 0 16 16">
                             <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z" />
@@ -157,7 +164,7 @@ export const BodyLeftside = () => {
                         </svg>}</li>
                         {
 
-                            semp === true && <div style={{ height: semp ? "100px" : "0px",transition: "height 0.5s ease-in 1s"}}   className={style.increasesize2}>
+                            <div className={`${style.increasesize12} ${semp ? style.showDiv1 : ""}`}   >
                                 <ul >
                                     <Link to="/application-marketing">     <li style={{ backgroundColor: x === "Market" ? "rgb(168,185,204)" : "" }} onClick={() => setx("Market")} ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
                                         <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1zm1 12h2V2h-2zm-3 0V7H7v7zm-5 0v-3H2v3z" />
@@ -217,7 +224,15 @@ export const BodyLeftside = () => {
                     </ul>
 
                 </div>
+{
+    a=== true && <div style={{width:"1400px", height:"98vh", zIndex:"2", backgroundColor:"grey", position:"relative", bottom:"680px",left:"40px",backgroundColor:"rgb(100,108,172",borderRadius:"10px"}}>
+             <svg  onClick={()=>{seta(false)}} xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="lightgray" class="bi bi-x" viewBox="0 0 16 16">
+  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+</svg>
 
+        <Webmail/>
+    </div>
+}
             </div>
 
         </>

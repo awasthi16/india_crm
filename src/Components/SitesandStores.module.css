@@ -3,10 +3,437 @@
     margin: 0px;
 }
 .div1
-{
-      width: 81%;
+{    
+    display: flex;
+    width: 81%;
     height: 650px;
     position: absolute;
     top: 72px;
     left: 298px;
+   
+}
+.box1
+{
+   
+    width: 94%;
+    height: 650px;
+    overflow-y: scroll;
+}
+.box1::-webkit-scrollbar{
+    width: 5px;
+}
+.box1div1
+{
+    width:98%;
+    height: 80px;
+  
+ 
+}
+
+
+
+
+.box1div1 ul {
+    width: 100%;
+    height: 70px;
+    list-style-type: none;
+    display: flex;
+
+
+}
+
+.firstbutton {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 110px;
+    height: 50px;
+    background-color: rgb(110, 112, 185);
+    border: none;
+    outline: none;
+    color: white;
+
+
+}
+
+.firstbutton span {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.firstbutton svg {
+    position: relative;
+}
+
+.secondbutton {
+    margin-left: 25px;
+    position: relative;
+    top: 5px;
+    width: 120px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(43, 179, 116);
+    color: lightgray;
+}
+
+.secondbutton span {
+    font-size: large;
+    color: white;
+}
+.thirdbutton
+{
+    width: 200px;
+    height: 43px;
+    display: flex;
+    justify-content: end;
+   
+}
+.thirdbutton button
+{
+    margin-left: 25px;
+    position: relative;
+    top: 5px;
+    width: 120px;
+    height: 43px;
+    font-size: large;
+    border-radius: 5px;
+    background-color: white;
+    outline: none;
+    border: none;
+    color: white;
+   background-color: rgba(248, 246, 247, 0.2);
+
+}
+.thirdbutton button:hover{
+    background-color: rgb(132, 154, 182);
+}
+.thirdbutton span {
+    font-size: 17px;
+}
+
+.fourbutton {
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: 43px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    position: relative;
+    top: 5px;
+
+    color: white;
+    background-color: rgb(132, 154, 182);
+}
+
+.fourbutton:hover {
+    background-color: rgb(132, 154, 182);
+}
+
+.fourbutton input {
+    position: relative;
+    left: 5px;
+    display: flex;
+    width: 90%;
+    height: 43px;
+    font-size: large;
+    border-radius: 15px;
+    background-color: white;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgb(132, 154, 182);
+
+}
+
+.fourbutton input:hover {
+    background-color: rgb(132, 154, 182);
+}
+
+.fivebutton {
+    position: relative;
+    top: 5px;
+    left: 30px;
+    border: none;
+    outline: none;
+    width: 44px;
+    height: 43px;
+    border-radius: 10px;
+    background-color: rgba(248, 246, 247, 0.2);
+
+}
+
+.problemcreate {
+    width: 650px;
+
+}
+
+.fivebutton:hover {
+    background-color: rgb(132, 154, 182);
+}
+.box1div2
+{
+    width:98%;
+    height: 700px;
+   
+  
+}
+.box2
+{
+    width: 6%;
+    height: 650px;
+   
+}
+
+.main
+{
+    display: flex;
+    width: 80%;
+    height: 500px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: white;
+    position: relative;
+    top: 80px;
+    left: 70px;
+
+    }
+.mainbox1
+{
+    width: 80%;
+    height: 500px;
+   
+  
+}
+.mainbox1div1
+{   
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 240px;
+   
+}
+.large
+{
+    text-align: center;
+    font-size: 43px;
+    color: rgb(32,102,176);
+    position: relative;
+     top: 60px;
+    
+}
+.small
+{
+    text-align: center;
+    font-size: 30px;
+     position: relative;
+     top: 60px;
+    
+}
+.moresmall 
+{
+      text-align: center;
+    font-size: 30px;
+    position: relative;
+    top: 80px;
+    left: 260px;
+    
+}
+.moresmall  button{
+    padding: 5px;
+    border-radius: 10px;
+    width: 180px;
+       display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    outline: none;
+    color: rgb(142,82,236);
+    background-color: rgb(235,230,248);
+}
+.moresmall  span{
+      font-size: 17px;
+}
+.mainbox1div2
+{
+    width: 100%;
+    height: 230px;
+}
+.mainbox1div2 ul{
+    list-style: none;
+    width: 100%;
+    height: 180px;
+ 
+}
+.mainbox1div2 ul li{
+    width: 100%;
+    height: 40px;
+   
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    position: relative;
+    left: 15px;
+}
+.mainbox1div2 ul li span{
+  
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: rgb(79,201,240);
+}
+.mainbox2
+{
+  width: 20%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.mainbox1div3
+{
+    width: 100%;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.start
+{
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(187,237,33);
+    position: relative;
+    bottom: 80px;
+}
+
+
+.box1div3
+{
+     width:98%;
+    height: 40px;
+}
+
+.box1div3 ul {
+    width: 60%;
+    height: 60%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box1div3 ul li button {
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgba(248, 246, 247, 0.2);
+    font-size: 16px;
+}
+
+
+
+.johri2div1b1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 170px;
+
+}
+
+.johri2div1b1 ul {
+    position: relative;
+    top: 15px;
+
+    width: 50%;
+    height: 140px;
+    list-style: none;
+
+}
+
+.johri2div1b1 ul li {
+    margin-left: 3px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 35px;
+    height: 35px;
+    color: white;
+    border-radius: 50%;
+    background-color: rgba(182, 190, 206, 0.2);
+
+}
+
+.johri2div1b1 ul li:hover {
+    background-color: rgb(219, 225, 236, 0.2);
+}
+
+.johri2div1b2 {
+    width: 100%;
+    height: 220px;
+  
+    position: relative;
+    left: 5px;
+
+}
+
+.johri2div1b2 ul {
+    width: 100%;
+    height: 220px;
+  
+    list-style: none;
+}
+
+.johri2div1b2 ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 51px;
+
+
+}
+
+.johri2div1b2 ul li:hover {
+    background-color: rgb(219, 225, 236, 0.2);
+}
+
+.johri2div1b2 ul li div {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(47, 198, 246);
+
+}
+
+.icon1 {
+    background: linear-gradient(360deg, rgb(47, 198, 246), rgb(89, 242, 87));
 }

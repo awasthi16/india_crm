@@ -1,27 +1,40 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
-.div1
-{
+
+.div1 {
     display: flex;
     width: 100%;
     height: 660px;
-    border: 2px solid red;
-     display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
-   white-space: nowrap;
-
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    gap: 5px;
+    padding-bottom: 10px;
+}
+.div1::-webkit-scrollbar{
+    height: 6px;
+}
+.div1::-webkit-scrollbar-track{
+    background-color: rgb(132, 154, 182);
+    border-radius: 5px;
+}
+.div1::-webkit-scrollbar-thumb {
+   background-color: rgb(168, 183, 203);
+  border-radius: 10px;        /* round edges */
 }
 .box1 {
-    width: 26%;
+    width: 300px;
     height: 660px;
     border-radius: 5px;
     margin-right: 1px;
-    border-left:2px dotted white;
-     border-right:2px dotted white;
-      border-bottom:2px dotted white;
+    border-left: 2px dotted white;
+    border-right: 2px dotted white;
+    border-bottom: 2px dotted white;
+    flex-shrink: 0;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .box1div1 {
@@ -31,8 +44,8 @@
     height: 45px;
     border-radius: 5px;
     color: lightgray;
-    background-color: rgb(255,87,82);
-    
+    background-color: rgb(255, 87, 82);
+
 }
 
 .box1div1 p {
@@ -48,6 +61,7 @@
 .box1div1 p span {
     color: black;
 }
+
 .box1div2 {
     width: 100%;
     height: 40px;
@@ -71,8 +85,9 @@
     border-radius: 15px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    background-color: rgb(158,165,193);
+    background-color: rgb(158, 165, 193);
 }
+
 .box1div2 ul li svg {
     position: relative;
     right: 5px;
@@ -83,18 +98,19 @@
     width: 100%;
     height: 500px;
     margin-top: 10px;
-  
-  
+
+
 }
 
 
 .box2 {
-    width: 26%;
+    width: 300px;
     height: 660px;
     border-radius: 5px;
     margin-right: 1px;
-    border-right: 2px  dotted white;
-    border-bottom:  2px  dotted white;
+    border-right: 2px dotted white;
+    border-bottom: 2px dotted white;
+    flex-shrink: 0;
 }
 
 .box2div1 {
@@ -105,7 +121,7 @@
 
     border-radius: 5px;
     color: lightgray;
-    background-color: rgb(123,213,0);
+    background-color: rgb(123, 213, 0);
 
 }
 
@@ -122,6 +138,7 @@
 .box2div1 p span {
     color: black;
 }
+
 .box2div2 {
     width: 100%;
     height: 40px;
@@ -147,10 +164,11 @@
     border-radius: 15px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    
+
 
 
 }
+
 .box2div2 ul li svg {
     position: relative;
     right: 5px;
@@ -168,12 +186,13 @@
 
 
 .box3 {
-    width: 26%;
+    width: 300px;
     height: 660px;
     border-radius: 5px;
     margin-right: 1px;
-    border-right: 2px  dotted white;
-    border-bottom:  2px  dotted white;
+    border-right: 2px dotted white;
+    border-bottom: 2px dotted white;
+    flex-shrink: 0;
 }
 
 .box3div1 {
@@ -184,7 +203,7 @@
 
     border-radius: 5px;
     color: lightgray;
-    background-color: rgb(47,198,246);
+    background-color: rgb(47, 198, 246);
 
 }
 
@@ -201,6 +220,7 @@
 .box3div1 p span {
     color: black;
 }
+
 .box3div2 {
     width: 100%;
     height: 40px;
@@ -226,7 +246,7 @@
     border-radius: 15px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    
+
 }
 
 .box3div2 ul li svg {
@@ -246,12 +266,13 @@
 
 
 .box4 {
-    width: 26%;
+    width: 300px;
     height: 660px;
     border-radius: 5px;
     margin-right: 1px;
-    border-right: 2px  dotted white;
-    border-bottom:  2px  dotted white;
+    border-right: 2px dotted white;
+    border-bottom: 2px dotted white;
+    flex-shrink: 0;
 }
 
 .box4div1 {
@@ -262,7 +283,7 @@
 
     border-radius: 5px;
     color: lightgray;
-    background-color: rgb(85,208,224);
+    background-color: rgb(85, 208, 224);
 
 }
 
@@ -279,6 +300,7 @@
 .box4div1 p span {
     color: black;
 }
+
 .box4div2 {
     width: 100%;
     height: 40px;
@@ -307,6 +329,7 @@
 
 
 }
+
 .box4div2 ul li svg {
     position: relative;
     right: 5px;
@@ -326,12 +349,13 @@
 
 
 .box5 {
-    width: 26%;
+    width: 300px;
     height: 660px;
     border-radius: 5px;
     margin-right: 1px;
-    border-right: 2px  dotted white;
-    border-bottom:  2px  dotted white;
+    border-right: 2px dotted white;
+    border-bottom: 2px dotted white;
+    flex-shrink: 0;
 }
 
 .box5div1 {
@@ -342,7 +366,7 @@
 
     border-radius: 5px;
     color: lightgray;
-    background-color: rgb(158,172,194);
+    background-color: rgb(158, 172, 194);
 
 }
 
@@ -359,6 +383,7 @@
 .box5div1 p span {
     color: black;
 }
+
 .box5div2 {
     width: 100%;
     height: 40px;
@@ -388,6 +413,7 @@
 
 
 }
+
 .box5div2 ul li svg {
     position: relative;
     right: 5px;
@@ -401,12 +427,13 @@
 }
 
 .box6 {
-    width: 26%;
+    width: 300px;
     height: 660px;
     border-radius: 5px;
     margin-right: 1px;
-    border-right: 2px  dotted white;
-    border-bottom:  2px  dotted white;
+    border-right: 2px dotted white;
+    border-bottom: 2px dotted white;
+    flex-shrink: 0;
 }
 
 .box6div1 {
@@ -416,7 +443,7 @@
     height: 45px;
     border-radius: 5px;
     color: lightgray;
-    background-color: rgb(51,115,187);
+    background-color: rgb(51, 115, 187);
 
 }
 
@@ -433,6 +460,7 @@
 .box6div1 p span {
     color: black;
 }
+
 .box6div2 {
     width: 100%;
     height: 40px;
@@ -458,8 +486,9 @@
     border-radius: 15px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    
+
 }
+
 .box6div2 ul li svg {
     position: relative;
     right: 5px;
@@ -471,12 +500,3 @@
     height: 500px;
     margin-top: 10px;
 }
-
-
-
-
-
-
-
-
-

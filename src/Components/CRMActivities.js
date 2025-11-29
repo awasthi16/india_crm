@@ -10,9 +10,9 @@ const CRMActivities = () => {
           <div  onMouseOver={()=>setaa("box1")} className={Style.box1}>
       
                           <div className={Style.box1div1}>
-                              <p><span>Overdue</span>(0) </p>
+                              <p><span>Overdue</span>(0)</p>
                           </div>
-          
+
                           <div className={Style.box1div2}>
                               <ul>
                                   <li onMouseOver={()=>{setbb("box1")}}  onMouseLeave={()=>{setbb("")}}   style={{backgroundColor:aa==="box1"?"rgba(248, 246, 247, 0.2)":"",background:bb==="box1"?"rgba(176,177,198)":""}}><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
@@ -49,11 +49,6 @@ const CRMActivities = () => {
                           </div>
       
                       </div>
-
-
-
-
-
 
                       <div onMouseOver={()=>setaa("box3")}  className={Style.box3}>
       
@@ -96,7 +91,7 @@ const CRMActivities = () => {
                       </div>
 
 {/* ---------------------------------box5--------------------------- */}
-                       {/* <div onMouseOver={()=>setaa("box5")}  className={Style.box5}>
+                       <div onMouseOver={()=>setaa("box5")}  className={Style.box5}>
       
                           <div className={Style.box5div1}>
                               <p><span>Idle</span>(0) </p>
@@ -114,10 +109,10 @@ const CRMActivities = () => {
 
                           </div>
       
-                      </div> */}
+                      </div>
 
 {/*--------------------------------box6------------------------------- */}
-                      {/* <div  onMouseOver={()=>setaa("box6")}  className={Style.box6}>
+                      <div  onMouseOver={()=>setaa("box6")}  className={Style.box6}>
       
                           <div className={Style.box6div1}>
                               <p><span>Due Later</span>(0) </p>
@@ -135,7 +130,7 @@ const CRMActivities = () => {
 
                           </div>
       
-                      </div> */}
+                      </div>
      
      </div>
    </>

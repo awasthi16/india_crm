@@ -107,7 +107,7 @@ const CRM = () => {
             {value === "calendar" && <CRMCalender />}
           </div>
           <div className={Style.div1abox4}>
-
+            
             <ul>
               <li><button>Bitrix 24 <sup><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-stopwatch" viewBox="0 0 16 16">
                 <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z" />

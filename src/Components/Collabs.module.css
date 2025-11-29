@@ -9,4 +9,299 @@
     position: absolute;
     top: 72px;
     left: 298px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box
+{
+    width: 96%;
+    height: 620px;
+ 
+    border-radius: 10px ;
+    display: flex;
+}
+.box1
+{
+    width: 40%;
+    height: 620px;
+  
+    border-bottom-left-radius: 10px;
+     border-top-left-radius: 10px;
+     background-color: white;
+}
+.box1div1
+{
+    width: 100%;
+    height:70px;
+    border-bottom: 1px solid lightgray;
+}
+
+.box1div1 ul{
+    list-style: none;
+   
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 320px;
+    
+}
+.box1div1 ul li {
+ 
+   height: 30px;
+}
+.box1div1 ul li span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.box1div1 ul li button
+{
+    width: 50px;
+    height: 35px;
+    border-radius: 15px;
+    background-color:rgb(0,169,78);
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.box2
+{   display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 620px;
+  
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(159,221,154);
+}
+.box2a
+{
+    width: 90%;
+    height: 620px;
+  
+    background-color: rgb(146, 196, 146,0.6);
+}
+.box2adiv1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:170px;
+  
+}
+.circle
+{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.box2adiv2
+{
+    text-align: center;
+    width: 100%;
+    height: 150px;
+   
+}
+.box2adiv2 p{
+    position: relative;
+    top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+}
+.box2adiv3
+{
+  width: 100%;
+  height: 200px;
+
+}
+.box2firstdiv
+{
+    display: flex;
+    width: 90%;
+    height: 60px;
+    position: relative;
+    left: 25px;
+ 
+}
+.box2firstdivdiv1
+{
+    width: 10%;
+    height: 60px;
+    
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.johricircle
+{
+    width: 40px;
+    height: 40px;
+   
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(212,200,200);
+}
+.box2firstdivdiv2
+{
+    width: 90%;
+    height: 60px;
+ 
+}
+.box2firstdivdiv2 ul{
+    list-style: none;
+    width: 100%;
+    height: 80px;
+}
+.box2firstdivdiv2 ul li{
+    width: 100%;
+    height: 29px;
+}
+.large
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+.small
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: gray;
+}
+
+.box2secondiv
+{
+
+    display: flex;
+    width: 90%;
+    height: 90px;
+      position: relative;
+    left: 25px;
+   
+}
+
+.box2seonddivdiv1
+{
+    width: 10%;
+    height: 90px;
+  
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.johricircle
+{
+    width: 40px;
+    height: 40px;
+  
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(212,200,200);
+}
+.box2seconddivdiv2
+{
+    width: 90%;
+    height: 90px;
+  
+}
+.box2seconddivdiv2 ul{
+    list-style: none;
+    width: 100%;
+    height: 80px;
+
+}
+.box2seconddivdiv2 ul li{
+    width: 100%;
+    height: 29px;
+    
+}
+
+.box2thirddiv
+{
+    display: flex;
+    width: 90%;
+    height: 60px;
+      position: relative;
+    left: 25px;
+  
+}
+.box2thirddivdiv1
+{
+    width: 10%;
+    height: 60px;
+   
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.johricircle
+{
+    width: 40px;
+    height: 40px;
+ 
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(212,200,200);
+}
+.box2thirddivdiv2
+{
+    width: 90%;
+    height: 60px;
+   
+}
+.box2thirddivdiv2 ul{
+    list-style: none;
+    width: 100%;
+    height: 80px;
+}
+.box2thirddivdiv2 ul li{
+    width: 100%;
+    height: 29px;
+}
+.box2adiv4
+{
+    width: 100%;
+    height: 80px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box2adiv4  button
+{
+
+    width: 170px;
+    height: 60px;
+     border: none;
+     outline: none;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 5px;
+    font-weight: bolder;
+}
+.box2adiv4  button:hover{
+    color: green;
 }

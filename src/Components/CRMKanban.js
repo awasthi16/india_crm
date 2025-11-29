@@ -8,6 +8,7 @@ import Style from './CRNKanban.module.css'
 const CRMKanban = () => {
     const [k, setk] = useState("box1")
     const [n, setn] = useState(false)
+  
     // const [r,setr] = useState(null)
 
 
@@ -24,13 +25,13 @@ const CRMKanban = () => {
         <>
 
             <div className={Style.div1}>
-{/* <Slider    {...settings}> */}
+
                 <div onMouseOver={() => { setk("box1") }} className={Style.box1}>
 
                     <div className={Style.box1div1}>
-                        <p><span>New</span>(0) </p><svg style={{ position: "relative", left: "60px"}} xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="gray" class="bi bi-pencil" viewBox="0 0 16 16">
+                        <p><span>New</span>(0) </p>{k==="box1"?<svg style={{ position: "relative", left:n==="box1" ?"30px":"60px",transition:"left 0.3s ease-in 0s"}} xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="gray" class="bi bi-pencil" viewBox="0 0 16 16">
                             <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
-                        </svg> {k === "box1" ? <svg onMouseOver={()=>{setn("box1")}} onMouseLeave={()=>{setn("")}}   style={{ position: "relative", left: "45px", transform: n==="box1" ? "scale(1.3)" : "scale(1)" }} xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                        </svg>:""} {k === "box1" ? <svg onMouseOver={()=>{setn("box1")}} onMouseLeave={()=>{setn("")}}   style={{ position: "relative", left: "45px", transform: n==="box1" ? "scale(1.3)" : "scale(1)" }} xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
                         </svg> : ""}
                     </div>
@@ -41,7 +42,7 @@ const CRMKanban = () => {
                         <ul>
                             <li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                                 <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
-                            </svg><span>Quick Deal</span></li>
+                            </svg><span  style={{ width: k==="box1" ? "33%" : "1%", transition: "width 0.3s ease-in 0s",height:"18px"}}>{k === "box1" ? "Quick Deal" : ""}</span></li>
                         </ul>
 
                     </div>
@@ -93,9 +94,9 @@ const CRMKanban = () => {
                 <div onMouseOver={() => { setk("box2") }}  className={Style.box2}>
 
                     <div className={Style.box2div1}>
-                        <p><span>Create Papers</span>(0) </p><svg style={{ position: "relative", left: "60px" }} xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="gray" class="bi bi-pencil" viewBox="0 0 16 16">
+                        <p><span>Create Papers</span>(0) </p>{k==="box2"?<svg style={{ position: "relative", left:n==="box2" ?"30px":"60px",transition:"left 0.3s ease-in 0s"}} xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="gray" class="bi bi-pencil" viewBox="0 0 16 16">
                             <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
-                        </svg> {k === "box2" ? <svg onMouseOver={()=>{setn("box2")}} onMouseLeave={()=>{setn("")}} style={{ position: "relative", left: "45px", transform: n==="box2" ? "scale(1.2)" : "scale(1)" }} xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                        </svg>:""} {k === "box2" ? <svg onMouseOver={()=>{setn("box2")}} onMouseLeave={()=>{setn("")}} style={{ position: "relative", left: "45px", transform: n==="box2" ? "scale(1.2)" : "scale(1)" }} xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
                         </svg> : ""}
                     </div>
@@ -106,7 +107,7 @@ const CRMKanban = () => {
                         <ul>
                             <li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                                 <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
-                            </svg><span>Quick Deal</span></li>
+                            </svg><span style={{ width: k==="box2" ? "33%" : "1%", transition: "width 0.3s ease-in 0s",height:"18px"}}>{k === "box2" ? "Quick Deal" : ""}</span></li>
                         </ul>
 
                     </div>
@@ -125,9 +126,9 @@ const CRMKanban = () => {
                 <div onMouseOver={() => { setk("box3") }}  className={Style.box3}>
 
                     <div className={Style.box3div1}>
-                        <p><span>Invoice</span>(0) </p><svg style={{ position: "relative", left: "60px" }} xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="gray" class="bi bi-pencil" viewBox="0 0 16 16">
+                        <p><span>Invoice</span>(0) </p>{k==="box3"?<svg style={{ position: "relative", left:n==="box3" ?"30px":"60px",transition:"left 0.3s ease-in 0s"}} xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="gray" class="bi bi-pencil" viewBox="0 0 16 16">
                             <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
-                        </svg> {k === "box3" ? <svg  onMouseOver={()=>{setn("box3")}} onMouseLeave={()=>{setn("")}}  style={{ position: "relative", left: "45px",  transform: n==="box3" ? "scale(1.2)" : "scale(1)"}} xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                        </svg>:""} {k === "box3" ? <svg  onMouseOver={()=>{setn("box3")}} onMouseLeave={()=>{setn("")}}  style={{ position: "relative", left: "45px",  transform: n==="box3" ? "scale(1.2)" : "scale(1)"}} xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
                         </svg> : ""}
                     </div>
@@ -138,7 +139,7 @@ const CRMKanban = () => {
                         <ul>
                             <li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                                 <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
-                            </svg><span>Quick Deal</span></li>
+                            </svg><span style={{ width: k==="box3" ? "33%" : "1%", transition: "width 0.3s ease-in 0s",height:"18px"}}>{k === "box3" ? "Quick Deal" : ""}</span></li>
                         </ul>
 
                     </div>
@@ -153,9 +154,9 @@ const CRMKanban = () => {
                 <div onMouseOver={() => { setk("box4") }} className={Style.box4}>
 
                     <div className={Style.box4div1}>
-                        <p><span>In progress</span>(0) </p><svg style={{ position: "relative", left: "60px" }} xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="gray" class="bi bi-pencil" viewBox="0 0 16 16">
+                        <p><span>In progress</span>(0) </p>{k==="box4"?<svg style={{ position: "relative", left:n==="box4" ?"30px":"60px",transition:"left 0.3s ease-in 0s"}} xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="gray" class="bi bi-pencil" viewBox="0 0 16 16">
                             <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
-                        </svg> {k === "box4" ? <svg onMouseOver={()=>{setn("box4")}} onMouseLeave={()=>{setn("")}} style={{ position: "relative", left: "45px", transform: n==="box4" ? "scale(1.2)" : "scale(1)"}} xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                        </svg>:""} {k === "box4" ? <svg onMouseOver={()=>{setn("box4")}} onMouseLeave={()=>{setn("")}} style={{ position: "relative", left: "45px", transform: n==="box4" ? "scale(1.2)" : "scale(1)"}} xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
                         </svg> : ""}
                     </div>
@@ -166,7 +167,7 @@ const CRMKanban = () => {
                         <ul>
                             <li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                                 <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
-                            </svg><span>Quick Deal</span></li>
+                            </svg><span style={{ width: k==="box4" ? "33%" : "1%", transition: "width 0.3s ease-in 0s",height:"18px"}}>{k === "box4" ? "Quick Deal" : ""}</span></li>
                         </ul>
 
                     </div>
@@ -181,12 +182,12 @@ const CRMKanban = () => {
 {/* -------------------------------------------------box5------------------------------------------ */}
 
 
-                {/* <div onMouseOver={() => { setk("box5") }}  className={Style.box5}>
+                <div onMouseOver={() => { setk("box5") }}  className={Style.box5}>
 
                     <div className={Style.box5div1}>
-                        <p><span>Final Invoice</span>(0) </p><svg style={{ position: "relative", left: "60px" }} xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="gray" class="bi bi-pencil" viewBox="0 0 16 16">
+                        <p><span>Final Invoice</span>(0) </p>{k==="box5"?<svg style={{ position: "relative", left:n==="box5" ?"30px":"60px",transition:"left 0.3s ease-in 0s"}} xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="gray" class="bi bi-pencil" viewBox="0 0 16 16">
                             <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
-                        </svg> {k === "box5" ? <svg onMouseOver={()=>{setn("box5")}} onMouseLeave={()=>{setn("")}} style={{ position: "relative", left: "45px", transform: n==="box5" ? "scale(1.2)" : "scale(1)" }} xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                        </svg>:""} {k === "box5" ? <svg onMouseOver={()=>{setn("box5")}} onMouseLeave={()=>{setn("")}} style={{ position: "relative", left: "45px", transform: n==="box5" ? "scale(1.2)" : "scale(1)" }} xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
                         </svg> : ""}
                     </div>
@@ -197,7 +198,7 @@ const CRMKanban = () => {
                         <ul>
                             <li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                                 <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
-                            </svg><span>Quick Deal</span></li>
+                            </svg><span style={{ width: k==="box5" ? "33%" : "1%", transition: "width 0.3s ease-in 0s",height:"18px"}}>{k === "box5" ? "Quick Deal" : ""}</span></li>
                         </ul>
 
                     </div>
@@ -206,8 +207,8 @@ const CRMKanban = () => {
                     </div>
 
 
-                </div> */}
-                {/* </Slider> */}
+                </div>
+               
 
 
 
